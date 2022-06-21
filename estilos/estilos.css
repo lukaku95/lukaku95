@@ -1,0 +1,370 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-decoration:none;
+    list-style: none;
+ }
+
+
+
+ #grid-area {
+    font-family: sans-serif;
+    display: grid;
+    grid-template-areas: 
+    "primer primer "
+    "encabezado encabezado"
+    "fotos fotos "
+    "video video "
+    "info info "
+    "footer footer";
+    height: 100vh;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    
+}
+.primer {
+    grid-area: primer;
+   
+}
+.primer p {
+    font-size: 12px;
+    margin: 7px;
+}
+header {
+    background: rgb(230, 223, 223);
+    grid-area: encabezado;
+    position: sticky;
+    top: 0;
+   
+}
+
+.main-fotos {
+   
+    grid-area: fotos;
+}
+aside {
+    grid-area: video;
+}
+
+section {
+    grid-area: info;
+}
+
+
+
+#contacto {
+    font-family: sans-serif;
+    display: grid;
+    grid-template-areas:
+   "primer primer"
+   "encabezado encabezado"
+    "main-contacto main-contacto"
+    "footer footer";
+    height: 100vh;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    
+  
+} 
+.primer {
+    grid-area: primer;
+    display: flex;
+    background: black;
+    color: white;
+    justify-content: center;
+}
+.main-contacto {
+    grid-area: main-contacto;
+   
+
+}
+.main-contacto input {
+    width: 195px;
+    height: 24px;
+    transition: all 1s;
+   
+
+}
+.main-contacto input:hover {
+    width: 290px;
+    height: 50px;
+    cursor: pointer;
+}
+
+footer {
+    grid-area: footer;
+}
+.datos {
+    width: 50%;
+    margin-left: 25%;
+    padding: 20px;
+    justify-content: center;
+    border: 2px solid black;
+}
+.input-form {
+    width: 100%;
+    justify-content: space-around;
+
+
+}
+
+
+
+.main-contacto {
+    justify-content: center;
+    align-items: center;
+    background-color: #e3a6a6;
+    
+    
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background-image: url(/BotinesPro+Gasparri\ Lucas/Imagenes/descarga.jpg);
+}
+.foto{
+    display: flex;
+    margin-left: 16px;
+}
+.navbar .titulo {
+    display: flex;
+    align-items: flex-start;
+    text-decoration: none;
+    /* sacar el link (subrayado) */
+        padding: 20px;
+        text-align: left;
+        flex-direction: row;
+
+ }
+
+ .navbar .titulo h1{
+    color: white;
+    font-family: "Montserrat", sans-serif; 
+    margin-left: 14px;
+    text-shadow: 4px 2px 2px black;
+    border-radius: 40px;
+    background-color: black;
+    border: 2px solid white;
+    padding: 7px;
+
+}
+
+.icono {
+    margin-left: 11px;
+    margin-top: 8px;
+}
+
+
+    
+    
+
+.navbar-ul {
+    list-style: none;
+    /* sacar las viñetas (puntitos) */
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 30px;
+}
+
+.social {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 20%;
+    margin-right: 20%;
+
+}
+
+
+
+.navbar-a {
+    display: flex;
+    text-decoration: none;
+    color: white;
+    margin-right: 20px;
+    padding: 5px;
+    border-radius: 20px;
+    background-color: black;
+    border: 2px solid white;
+}
+
+
+
+/* cuando estoy con el mouse arriba del elemento */
+.navbar-a:hover {
+    color: white;
+    filter: invert(1);
+
+}
+
+
+.cartilla{
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 500px;
+    background-color: black;
+    color: white;
+    
+}
+
+.cartilla:hover{
+    color: black;
+    background-color: white;
+   
+}
+
+.cartilla-1{
+    padding: 20px;
+    margin:10px;
+    display: flex;
+    text-align: center;
+    justify-content:space-around;
+    border: 2px dashed black;
+    border-radius: 100px;
+    background-color: white;
+    color: black;
+}
+
+.enviar {
+    padding: 5px;
+    border-radius: 300px;
+}
+.borrar {
+    padding: 5px;
+    border-radius: 300px;
+    color: red;
+}
+.seccion-2 {
+    
+    text-align: center;
+   
+}
+
+.seccion-2 .tipos{
+   text-align: center;
+   border: 2px solid black;
+   border-radius: 500px;
+   background-color: black;
+   color: white;
+}
+
+.seccion-2 .tipos:hover{
+color:black;
+background-color: white;
+}
+
+
+.informacion{
+    color: black;
+    text-align: center;
+    font-size:x-large;
+    font-weight: 800;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+
+}
+
+.informacion .info-1{
+    font-size: medium;
+    text-decoration: none;
+    list-style: none;
+ 
+ }
+
+
+section ul li {         
+    list-style: none;   /* como psao esto a .scss???? */
+}
+
+.navbar h1 {
+    color: black;
+
+}
+
+.video {
+    border: 5px solid rgb(230, 223, 223);
+    border-radius: 50px ;
+    background-color: grey;
+    margin-top: 5px;
+    transform: scale(100%, 100%);
+    position: relative;
+    
+}
+.video:hover {
+    transform: scale(125%, 125%);
+    transition:all 2s;
+    position: relative;
+}
+
+.container-botines {
+    background-color: black;
+    display: flex;
+    padding: 10px;
+    gap: 8px;
+    /* espacio entre img */
+    
+}
+
+
+.container-botines img {
+    width: 20%;
+    /* ancho */
+    height: 150px;
+    /* alto */
+}
+aside {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+section {
+    background:  rgb(230, 223, 223);
+   
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+
+    
+
+ }
+ footer .texto{
+     margin-top: 50px;
+ }
+
+.iconos-rs {
+  
+    margin-top: 10px;
+    height: 50px;
+    width: 50px;
+}
+.social {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 80px;
+
+}
+@media  screen and (min-width:768px) { /* min- =a partir de... */
+    .seccion {
+        background-color:rgb(230, 223, 223);
+    }
+}
+@media screen and (max-width:768px) {/* max-= hasta aca */
+    .seccion {
+        background-color: brown;  
+    }
+    .main-fotos {
+        display: none;
+    }
+}
+
