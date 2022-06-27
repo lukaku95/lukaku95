@@ -22,14 +22,14 @@
     overflow: hidden;
     display: none;
   }
+  #carouselExampleIndicators {
+    display: none;
+    overflow: hidden;
+  }
 }
 
 @media screen and (max-width: 768px) {
   /* mobile*/
-  aside .carouselMobile {
-    display: none;
-    overflow: hidden;
-  }
   .seccion {
     background-color: brown;
   }
@@ -50,6 +50,27 @@
   .info {
     display: none;
     overflow: hidden;
+  }
+  .formasDePago {
+    padding-top: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .main-contacto .datos {
+    width: 100%;
+    margin-left: 1px !important;
+    margin-bottom: 22px;
+    padding: 20px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    border: 13px solid black;
   }
 }
 
@@ -79,8 +100,6 @@
 .main-contacto input {
   width: 195px;
   height: 24px;
-  -webkit-transition: all 1s;
-  transition: all 1s;
 }
 
 .main-contacto .datos {
@@ -491,5 +510,14 @@ footer .formasDePago {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  max-width: 100%;
+}
+
+footer .formasDePago .pagoIcono {
+  width: 15%;
+}
+
+footer .footer-redes p {
+  padding-top: 30px;
 }
 /*# sourceMappingURL=main.css.map */
