@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family:'Kdam Thmor Pro', sans-serif;
     text-decoration:none;
     list-style: none;
  }
@@ -15,26 +15,32 @@
     .seccion {
         background-color:rgb (230, 223, 223);
     } 
-       
-   
-   
-   
-    .btns-container {
-        overflow: hidden;
-        justify-content: space-between;
-
-    .hamburguesa {
-        display: none;
-        
-
-         }
-    }
     
+    .btn {
+        display: none;
+        overflow: hidden;
+    }
+   header .navbar .btn {
+    overflow: hidden;
+    display: none;
+   }
+
    
 }
+
 @media screen and (max-width:768px) {/* mobile*/ // oculto navbar-ul
+
+  
+     aside .carouselMobile {
+        display: none;
+        overflow: hidden;
+    }
     .seccion {
-        background-color: brown;  
+        background-color: brown; 
+        
+        .video {
+            display: none;
+        }
     }
     .main-fotos {
         display: none;
@@ -46,12 +52,16 @@
 
     header {
         .navbar {
-            flex-direction: column;
+            
             > ul {
                 overflow: hidden;
                 display: none;
             }
         }
+    }
+    .info {
+        display: none;
+        overflow: hidden;
     }
    
     
@@ -66,7 +76,7 @@
     grid-template-areas: 
     "primer primer "
     "encabezado encabezado"
-    "fotos fotos "
+    "fotos fotos " 
     "video video "
     "info info "
     "footer footer";
@@ -150,11 +160,10 @@ aside {
 
 
 .container-botines {
-    background-color: black;
+    
     display: flex;
-    padding: 10px;
-    gap: 8px;
-    /* espacio entre img */
+  
+   
     
 }
 
@@ -190,8 +199,8 @@ aside {
     .btns-container {
         width: 100%;
         display: flex;
-        align-items: center;
-        padding: 20px;
+        
+        
 
         .btn {
             height: 40px;
@@ -234,8 +243,9 @@ aside {
 
     .navbar {
         display: flex;
-        justify-content: space-between;
-        background-image: url("../Imagenes/descarga.jpg");
+      
+        background-color:$colorfondo;
+       
        
         .titulo {
             display: flex;
@@ -246,7 +256,7 @@ aside {
 
                 h1{
                     color: white;
-                    font-family: "Montserrat", sans-serif; 
+                   
                     margin-right: 14px;
                     margin-bottom: 0;
                     text-shadow: 4px 2px 2px black;
@@ -265,7 +275,7 @@ aside {
         list-style: none;
         /* sacar las viñetas (puntitos) */
         display: flex;
-        justify-content: flex-end;
+        padding-left: 200px;
        
        
 
@@ -292,6 +302,10 @@ aside {
 
 
 .seccion-2 {
+    h2 {
+        background-color: $colorfondo;
+       
+    }
     
     text-align: center;
 
@@ -308,45 +322,94 @@ aside {
      }
    
 }
+    
+    .galeria {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
 
-section {
+        .g-img {
+            display: flex;
+            flex-direction: column;
+            
+            img {
+                margin: 20px;
+                width: 200px;
+                height: 200px; 
+
+            }
+            
+           
+
+            
+        }
+
+        .g-texto {
+            padding-left: 30px;
+            display: flex;
+            align-items: flex-start;
+            font-family: 'Kdam Thmor Pro', sans-serif;
+            width: 200px;
+            text-align: center;
+            
+            
+            
+        }
+
+      
+
+    }
+
+   
+    
+
+    section {
     grid-area: info;
-    background:  rgb(230, 223, 223);
+    background:  rgb (230, 223, 223);
     ul {
         li {
             list-style: none;
          }
+         display: flex;
+         justify-content: center;
+         margin: 10px;
+         padding: 20px;
+        
+         background-color: $colorfondo;
     }
-    .informacion{
+    .informacion {
+        width: 100%;
         color: black;
         text-align: center;
         font-size:x-large;
         font-weight: 800;
-        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+     
         
-        .info-1{
+        .info-1 {
+            width: 100%;
             font-size: medium;
             text-decoration: none;
             list-style: none;
+            padding: 10px;
+            text-align: left;
+
+            .detalle {
+                margin: 70px;
+            }
+
+            p {
+            padding: 5px;
+            font-size: small;
+           
+        }
+         
          
          }
         
     
     }
 
-    .cartilla {
-    text-align: center;
-    border: 2px solid black;
-    background-color: black;
-    color: white;
-
-    &:hover {
-        color: black;
-        background-color: white;
-       
-         }
-    
-    }
+   
         .cartilla-1 {
         padding: 20px;
         margin-top: -8px;
@@ -397,11 +460,34 @@ footer {
         }
     
     }
+        .redSocial {
+                text-decoration: none;
+                list-style: none;
+                color: white;
+                text-shadow: 3px 3px 3px grey;
 
-    
+                &:hover {
+                    color: red;
+                    transition: 2s;
+                    text-shadow: none;
+                    
+                }
+            }
+
+    .formasDePago {
+        padding-top: 50px;
+        display: flex;
+        justify-content: center;
+
+       
+    }
+
+   
 
  }
 
+
+  
 
  
 
