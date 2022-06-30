@@ -497,8 +497,8 @@ footer .redSocial {
 
 footer .redSocial:hover {
   color: red;
-  -webkit-transition: 2s;
-  transition: 2s;
+  -webkit-transition: 1s;
+  transition: 1s;
   text-shadow: none;
 }
 
@@ -519,5 +519,46 @@ footer .formasDePago .pagoIcono {
 
 footer .footer-redes p {
   padding-top: 30px;
+}
+
+.oferta-mobile {
+  width: 100%;
+}
+
+.oferta-mobile .mobile-texto {
+  background-color: #e6dfdf;
+  height: 80px;
+}
+
+.oferta-mobile .mobile-texto p {
+  padding-top: 17px;
+  font-size: large;
+  text-decoration: none;
+  list-style: none;
+  color: black;
+  -webkit-transform: scale(100%, 100%);
+          transform: scale(100%, 100%);
+}
+
+.oferta-mobile .mobile-texto p:hover {
+  -webkit-transform: scale(200%, 200%);
+          transform: scale(200%, 200%);
+  -webkit-transition: 2s;
+  transition: 2s;
+  color: red;
+}
+
+.oferta-mobile .mobile-img {
+  width: 50%;
+}
+
+.oferta-mobile .mobile-texto2 {
+  background-color: #e6dfdf;
+  height: 100px;
+}
+
+.oferta-mobile .mobile-texto2 p {
+  padding-top: 13px;
+  text-align: center;
 }
 /*# sourceMappingURL=main.css.map */

@@ -149,6 +149,8 @@ aside {
     text-align: center;
     justify-content: center;
     align-items: center;
+
+    
    
 }
 
@@ -482,7 +484,7 @@ footer {
 
                 &:hover {
                     color: red;
-                    transition: 2s;
+                    transition: 1s;
                     text-shadow: none;
                     
                 }
@@ -510,8 +512,67 @@ footer {
 
  }
 
+    .oferta-mobile {
+        width: 100%;
+        
+        
+        .mobile-texto {
+            background-color: $colorfondo;
+            height: 80px;
+        
+            
+            p {
+                padding-top: 17px;
+                font-size: large;
+                text-decoration: none;
+                list-style: none;
+                color: black;
+                transform: scale(100%, 100%) ;
 
-  
+                &:hover {
+                    transform: scale(200%, 200%);
+                    transition: 2s;
+                    color: red;
+                }
+            }
+        
+        }
+        
+        .mobile-img {
+            width: 50%;
+            
+            
+        }
 
- 
+        .mobile-texto2 {
+          
+            background-color: $colorfondo;
+            height: 100px;
+            
+
+            p {
+               
+                padding-top: 13px;
+                text-align: center;
+            }
+
+            
+        }
+       
+       
+
+        
+            
+
+        
+        
+        
+        
+
+    }
+
+
+    
+
+    
 
