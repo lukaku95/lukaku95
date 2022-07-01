@@ -317,6 +317,7 @@ aside {
             &:hover {
                 color: white;
                 filter: invert(1);
+                transition: 0.4s filter linear;
             
             }
             
@@ -584,6 +585,11 @@ footer {
       .infoFinal {
         margin-top: 20px;
 
+      }
+
+      .infoFinal .text-final {
+        padding-bottom: 1rem;
+        margin-bottom: 0;
       }
 
 

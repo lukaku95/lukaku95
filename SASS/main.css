@@ -333,6 +333,10 @@ header .navbar-ul .navbar-a:hover {
   color: white;
   -webkit-filter: invert(1);
           filter: invert(1);
+  -webkit-transition: 0.4s -webkit-filter linear;
+  transition: 0.4s -webkit-filter linear;
+  transition: 0.4s filter linear;
+  transition: 0.4s filter linear, 0.4s -webkit-filter linear;
 }
 
 .seccion-2 {
@@ -580,5 +584,10 @@ footer .footer-redes p {
 
 .infoFinal {
   margin-top: 20px;
+}
+
+.infoFinal .text-final {
+  padding-bottom: 1rem;
+  margin-bottom: 0;
 }
 /*# sourceMappingURL=main.css.map */
